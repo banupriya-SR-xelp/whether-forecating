@@ -18,10 +18,8 @@ export default class Home extends Component {
     );
     let resultJson = await result.json();
     this.setState({ data: resultJson });
-    //console.log(resultJson);
   };
   render() {
-    console.log(this.state.value, this.state.data);
     return (
       <div className={"base"}>
         <div className={"heading"}>Wheather Forcasting App</div>
